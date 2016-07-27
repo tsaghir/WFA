@@ -30,7 +30,7 @@ The problem is the project won't work if you don't add that file as a reference 
 To make this application work follow these steps:
 
 1. Download the project in zip format
-2. Use the Database script to create the database in your desired database management studio (We were using Microsovft SQL Server Management Studio).
+2. Use the Database script to create the database in your desired database management studio (We were using Microsoft SQL Server Management Studio).
 3. Use google translate to find out which entities are which and add some data in the database.
 4. Open the project in Visual Studio
 5. Set the database connections in your App.Configs

@@ -8,9 +8,9 @@ names of our projects
 ##2. The architecture
 We've devided the application into 3 layers and each layer represents a project
 
-HouseMed project represents Presentation layer
-HouseMed.BAL project represents Business access layer
-HouseMed.DAL project represents Data access layer
+- HouseMed project represents Presentation layer
+- HouseMed.BAL project represents Business access layer
+- HouseMed.DAL project represents Data access layer
 
 ##3. DAL - Data access layer
 In the DAL we are using EntityFramework to comunicate with the database and 

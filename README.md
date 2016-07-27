@@ -16,6 +16,8 @@ HouseMed.DAL project represents Data access layer
 In the DAL we are using EntityFramework to comunicate with the database and 
 all the database entities are on Croatian language so if there are any foreign readers sorry in advance (use google translate).
 
+Run the DatabaseScript to create the entities in a desired database management studio and change the App.config to your host in your visual studio on HouseMed and HouseMed.DAL projects. 
+
 ##4. Presentation layer
 
 #### LoadingScreen.dll

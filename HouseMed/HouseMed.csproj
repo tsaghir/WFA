@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73B698EC-A600-470D-8D22-6BFE5D8E35E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HouseMed</RootNamespace>
+    <AssemblyName>HouseMed</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LoadingScreen">
+      <HintPath>D:\__backup\Karlo\Dropbox\PI Projekt\LoadingScreen.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Certificates\frmAddNewCertificate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Certificates\frmAddNewCertificate.Designer.cs">
+      <DependentUpon>frmAddNewCertificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E-Carton\frmECarton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E-Carton\frmECarton.Designer.cs">
+      <DependentUpon>frmECarton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalDays\frmAddNewHospitalDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalDays\frmAddNewHospitalDay.Designer.cs">
+      <DependentUpon>frmAddNewHospitalDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medication\frmAddNewMedication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medication\frmAddNewMedication.Designer.cs">
+      <DependentUpon>frmAddNewMedication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalDays\frmHospitalDays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalDays\frmHospitalDays.Designer.cs">
+      <DependentUpon>frmHospitalDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients\frmAddNewPatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients\frmAddNewPatients.Designer.cs">
+      <DependentUpon>frmAddNewPatients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients\frmPatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients\frmPatients.Designer.cs">
+      <DependentUpon>frmPatients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedures\frmProcedures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedures\frmProcedures.Designer.cs">
+      <DependentUpon>frmProcedures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedures\frmProceduresControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedures\frmProceduresControl.Designer.cs">
+      <DependentUpon>frmProceduresControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Certificates\frmCertificates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Certificates\frmCertificates.Designer.cs">
+      <DependentUpon>frmCertificates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Raspored\FrmAddNewCijepljenje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raspored\FrmAddNewCijepljenje.Designer.cs">
+      <DependentUpon>FrmAddNewCijepljenje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Raspored\frmAddNewPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raspored\frmAddNewPregled.Designer.cs">
+      <DependentUpon>frmAddNewPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Raspored\frmRaspored.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raspored\frmRaspored.Designer.cs">
+      <DependentUpon>frmRaspored.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recipes\frmAddNewRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recipes\frmAddNewRecipe.Designer.cs">
+      <DependentUpon>frmAddNewRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recipes\frmMedicationSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recipes\frmMedicationSelect.Designer.cs">
+      <DependentUpon>frmMedicationSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recipes\frmRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recipes\frmRecipe.Designer.cs">
+      <DependentUpon>frmRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucNatrag.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucNatrag.Designer.cs">
+      <DependentUpon>ucNatrag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uputnice\frmAddNewUputnice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uputnice\frmAddNewUputnice.Designer.cs">
+      <DependentUpon>frmAddNewUputnice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uputnice\frmUputnice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uputnice\frmUputnice.Designer.cs">
+      <DependentUpon>frmUputnice.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Certificates\frmAddNewCertificate.resx">
+      <DependentUpon>frmAddNewCertificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Certificates\frmCertificates.resx">
+      <DependentUpon>frmCertificates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E-Carton\frmECarton.resx">
+      <DependentUpon>frmECarton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalDays\frmAddNewHospitalDay.resx">
+      <DependentUpon>frmAddNewHospitalDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medication\frmAddNewMedication.resx">
+      <DependentUpon>frmAddNewMedication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalDays\frmHospitalDays.resx">
+      <DependentUpon>frmHospitalDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients\frmAddNewPatients.resx">
+      <DependentUpon>frmAddNewPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients\frmPatients.resx">
+      <DependentUpon>frmPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedures\frmProcedures.resx">
+      <DependentUpon>frmProcedures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedures\frmProceduresControl.resx">
+      <DependentUpon>frmProceduresControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Raspored\FrmAddNewCijepljenje.resx">
+      <DependentUpon>FrmAddNewCijepljenje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raspored\frmAddNewPregled.resx">
+      <DependentUpon>frmAddNewPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raspored\frmRaspored.resx">
+      <DependentUpon>frmRaspored.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recipes\frmAddNewRecipe.resx">
+      <DependentUpon>frmAddNewRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recipes\frmMedicationSelect.resx">
+      <DependentUpon>frmMedicationSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recipes\frmRecipe.resx">
+      <DependentUpon>frmRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucNatrag.resx">
+      <DependentUpon>ucNatrag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uputnice\frmAddNewUputnice.resx">
+      <DependentUpon>frmAddNewUputnice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uputnice\frmUputnice.resx">
+      <DependentUpon>frmUputnice.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\HouseMed.DAL.djelatnici.datasource" />
+    <None Include="Properties\DataSources\HouseMed.DAL.lijekovi.datasource" />
+    <None Include="Properties\DataSources\HouseMed.DAL.pacijenti.datasource" />
+    <None Include="Properties\DataSources\HouseMed.DAL.recepti.datasource" />
+    <None Include="Properties\DataSources\HouseMed.DAL.uputnica.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HouseMed.BAL\HouseMed.BAL.csproj">
+      <Project>{0dad1f44-d740-4255-8c1f-c01e102d4da6}</Project>
+      <Name>HouseMed.BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HouseMed.DAL\HouseMed.DAL.csproj">
+      <Project>{c41c3b73-f5d4-4ddc-ae20-7400fe0ffba0}</Project>
+      <Name>HouseMed.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

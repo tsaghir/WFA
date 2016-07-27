@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C41C3B73-F5D4-4DDC-AE20-7400FE0FFBA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HouseMed.DAL</RootNamespace>
+    <AssemblyName>HouseMed.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cijepljenje.cs">
+      <DependentUpon>HouseMedModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cijepljenjeCustom.cs" />
+    <Compile Include="CijepljenjeDAL.cs" />
+    <Compile Include="pacijentiCustom.cs" />
+    <Compile Include="djelatnici.cs">
+      <DependentUpon>HouseMedModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DjelatniciContext.cs" />
+    <Compile Include="DjelatniciDAL.cs" />
+    <Compile Include="evidencija_hospitalizacije.cs">
+      <DependentUpon>HouseMedModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalizacijaCustom.cs" />
+    <Compile Include="HospitalizacijaDAL.cs" />
+    <Compile Include="HouseMedModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HouseMedModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HouseMedModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HouseMedModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HouseMedModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HouseMedModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="lijekovi.cs">
+      <DependentUpon>HouseMedModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LijekoviDAL.cs" />
+    <Compile Include="pacijenti.cs">
+      <DependentUpon>HouseMedModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PacijentiContext.cs" />
+    <Compile Include="PacijentiDAL.cs" />
+    <Compile Include="postupci.cs">
+      <DependentUpon>HouseMedModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="postupciCustom.cs" />
+    <Compile Include="PostupciDAL.cs" />
+    <Compile Include="potvrde.cs">
+      <DependentUpon>HouseMedModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="potvrdeCustom.cs" />
+    <Compile Include="PotvrdeDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rasporedCustom.cs" />
+    <Compile Include="raspored.cs">
+      <DependentUpon>HouseMedModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RasporedDAL.cs" />
+    <Compile Include="recepti.cs">
+      <DependentUpon>HouseMedModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReceptiContext.cs" />
+    <Compile Include="receptiCustom.cs" />
+    <Compile Include="ReceptiDAL.cs" />
+    <Compile Include="sifra_zdrv_ustanove.cs">
+      <DependentUpon>HouseMedModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="uputnica.cs">
+      <DependentUpon>HouseMedModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="uputnicaCustom.cs" />
+    <Compile Include="UputnicaDAL.cs" />
+    <Compile Include="ZdravUstanovaDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="HouseMedModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HouseMedModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="HouseMedModel.edmx.diagram">
+      <DependentUpon>HouseMedModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HouseMedModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HouseMedModel.edmx</DependentUpon>
+      <LastGenOutput>HouseMedModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="HouseMedModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HouseMedModel.edmx</DependentUpon>
+      <LastGenOutput>HouseMedModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

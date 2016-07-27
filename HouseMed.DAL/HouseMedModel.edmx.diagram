@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5e76c46a9e364ebd8e4f6b1154746286" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="HouseMedDBModel.cijepljenje" Width="1.5" PointX="5.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HouseMedDBModel.evidencija_hospitalizacije" Width="1.5" PointX="5.25" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="HouseMedDBModel.lijekovi" Width="1.5" PointX="3" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HouseMedDBModel.pacijenti" Width="1.5" PointX="3" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HouseMedDBModel.raspored" Width="1.5" PointX="8.25" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HouseMedDBModel.sifra_zdrv_ustanove" Width="1.5" PointX="0.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HouseMedDBModel.uputnica" Width="1.5" PointX="8.25" PointY="8.25" IsExpanded="true" />
+        <AssociationConnector Association="HouseMedDBModel.FK_cijepljenje_pacijenti" ManuallyRouted="false" />
+        <AssociationConnector Association="HouseMedDBModel.FK_evidencija_hospitacije_pacijenti" ManuallyRouted="false" />
+        <AssociationConnector Association="HouseMedDBModel.FK_lijekovi_sifra_zdrv_ustanove" ManuallyRouted="false" />
+        <AssociationConnector Association="HouseMedDBModel.FK_pacijenti_sifra_zdrv_ustanove" ManuallyRouted="false" />
+        <AssociationConnector Association="HouseMedDBModel.FK_raspored_pacijenti" ManuallyRouted="false" />
+        <AssociationConnector Association="HouseMedDBModel.FK_uputnica_Pacijenti" ManuallyRouted="false" />
+        <AssociationConnector Association="HouseMedDBModel.FK_raspored_sifra_zdrv_ustanove" ManuallyRouted="false" />
+        <AssociationConnector Association="HouseMedDBModel.FK_uputnica_sifra_zdrv_ustanove" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="HouseMedDBModel.recepti" Width="1.5" PointX="5.75" PointY="6.75" />
+        <AssociationConnector Association="HouseMedDBModel.FK_recepti_lijekovi" />
+        <AssociationConnector Association="HouseMedDBModel.FK_recepti_pacijenti" />
+        <AssociationConnector Association="HouseMedDBModel.FK_recepti_sifra_zdrv_ustanove" />
+        <EntityTypeShape EntityType="HouseMedDBModel.djelatnici" Width="1.5" PointX="3" PointY="7.625" />
+        <AssociationConnector Association="HouseMedDBModel.FK_cijepljenje_djelatnici" />
+        <AssociationConnector Association="HouseMedDBModel.FK_djelatnici_sifra_zdrv_ustanove" />
+        <AssociationConnector Association="HouseMedDBModel.FK_recepti_djelatnici" />
+        <AssociationConnector Association="HouseMedDBModel.FK_uputnica_djelatnici" />
+        <EntityTypeShape EntityType="HouseMedDBModel.postupci" Width="1.5" PointX="8.25" PointY="13.125" />
+        <AssociationConnector Association="HouseMedDBModel.FK_postupci_djelatnici" />
+        <AssociationConnector Association="HouseMedDBModel.FK_postupci_pacijenti" />
+        <EntityTypeShape EntityType="HouseMedDBModel.potvrde" Width="1.5" PointX="11.25" PointY="13.375" />
+        <AssociationConnector Association="HouseMedDBModel.FK_Potvrde_djelatnici" />
+        <AssociationConnector Association="HouseMedDBModel.FK_Potvrde_pacijenti" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

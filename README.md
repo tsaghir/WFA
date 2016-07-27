@@ -35,6 +35,6 @@ To make this application work follow these steps:
 4. Open the project in Visual Studio
 5. Set the database connections in your App.Configs
 6. Add LoadingScreen.dll as a reference in HouseMed project 
-7. Run the project
+7. Run the solution
 
 
